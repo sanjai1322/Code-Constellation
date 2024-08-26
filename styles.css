@@ -1,0 +1,421 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e2f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #FFD700; /* Yellow color */
+  text-align: center;
+}
+
+p, li, a {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #FFD700;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffbf00;
+}
+
+/* Header Styles */
+header {
+  background-color: #3a3a5c;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #FFD700;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffbf00;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Footer */
+footer {
+  background-color: #3a3a5c;
+  color: #FFD700;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+main, .video-container, article, section {
+  animation: fadeIn 2s ease-in-out;
+}
+/* Reset and base styles */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Font preference */
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff; /* Default text color */
+}
+
+body {
+  background-color: #2d0f4b; /* Dark purple background */
+  color: #ffffff; /* White text */
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: #1e0735; /* Darker shade for header */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+header h1 {
+  color: #ffd700; /* Yellow color for the logo */
+  font-size: 2em;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffd700; /* Yellow accent color */
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+  color: #ffc107; /* Slightly different shade of yellow on hover */
+}
+
+/* Main content styling */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #ffd700; /* Yellow accent color */
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Video and list styling */
+video {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  border: 2px solid #ffd700; /* Yellow border */
+  border-radius: 10px;
+}
+
+ul.video-topics {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.video-topics li {
+  background-color: #3b0a58; /* Dark purple for list items */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul.video-topics li a {
+  color: #ffffff; /* White text for links */
+  font-size: 1.2em;
+  display: block;
+}
+
+ul.video-topics li:hover {
+  background-color: #ffd700; /* Yellow on hover */
+  color: #2d0f4b; /* Text color change to dark purple on hover */
+  transform: translateY(-5px); /* Lift effect */
+}
+
+/* Button styling */
+button, .button {
+  background-color: #ffd700; /* Yellow button */
+  color: #2d0f4b; /* Dark purple text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: #ffc107; /* Slightly darker yellow on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Footer styling */
+footer {
+  background-color: #1e0735; /* Darker shade for footer */
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+/* Additional animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+main, header, footer {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  video {
+      width: 100%;
+      height: auto;
+  }
+
+  ul.video-topics li {
+      padding: 10px;
+  }
+
+  main {
+      padding: 10px;
+  }
+}
+/* Intro section styling */
+#intro {
+  background-color: #3b0a58; /* Dark purple background */
+  color: #ffd700; /* Yellow text */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#intro h2 {
+  color: #ffd700;
+}
+
+/* About section styling */
+#about {
+  background-color: #2d0f4b; /* Darker purple background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#about h2, #about h3 {
+  color: #ffd700; /* Yellow headings */
+}
+
+#about ul {
+  margin: 15px 0;
+}
+
+#about ul li {
+  margin-bottom: 10px;
+}
+
+/* Features section styling */
+#features {
+  background-color: #1e0735; /* Even darker purple background */
+  color: #ffd700; /* Yellow text */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  margin-bottom: 15px;
+}
+
+/* Call to Action (CTA) section styling */
+#cta {
+  background-color: #ffd700; /* Yellow background */
+  color: #2d0f4b; /* Dark purple text */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#cta h2 {
+  color: #2d0f4b;
+}
+
+#cta .button {
+  background-color: #2d0f4b; /* Dark purple button */
+  color: #ffd700; /* Yellow text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#cta .button:hover {
+  background-color: #1e0735; /* Darker purple on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+/* Additional styles for images and animations */
+.intro-image, .feature-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#features .feature {
+  margin-bottom: 30px;
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+/* styles.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2b0a3d; /* Dark purple background */
+  color: #ffffff; /* Text color */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+a {
+  color: #ffdd57; /* Yellow for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.course {
+  background-color: #3b176d; /* Slightly lighter purple for course blocks */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffdd57; /* Yellow button */
+  color: #2b0a3d; /* Dark purple text */
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffcc33; /* Darker shade of yellow on hover */
+}
